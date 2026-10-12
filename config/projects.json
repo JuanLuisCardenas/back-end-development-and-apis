@@ -88,7 +88,8 @@
     "isResetEnabled": true,
     "numberOfLessons": 1,
     "blockingTests": false,
-    "breakOnFailure": false
+    "breakOnFailure": false,
+    "completedDate": 1788898078193
   },
   {
     "id": 7,
@@ -114,20 +115,22 @@
     "isResetEnabled": false,
     "blockingTests": true,
     "breakOnFailure": true,
-    "numberOfLessons": 1
+    "numberOfLessons": 1,
+    "completedDate": 1788906221101
   },
   {
     "id": 9,
     "dashedName": "build-a-weather-service-api",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 0,
+    "currentLesson": 19,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
     "blockingTests": null,
     "breakOnFailure": null,
-    "numberOfLessons": 20
+    "numberOfLessons": 20,
+    "completedDate": 1791120080491
   },
   {
     "id": 10,
@@ -140,20 +143,22 @@
     "isResetEnabled": false,
     "blockingTests": true,
     "breakOnFailure": true,
-    "numberOfLessons": 1
+    "numberOfLessons": 1,
+    "completedDate": 1791320253126
   },
   {
     "id": 11,
     "dashedName": "build-a-bank-api",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 0,
+    "currentLesson": 34,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
     "blockingTests": null,
     "breakOnFailure": null,
-    "numberOfLessons": 35
+    "numberOfLessons": 35,
+    "completedDate": 1791809711225
   },
   {
     "id": 12,
