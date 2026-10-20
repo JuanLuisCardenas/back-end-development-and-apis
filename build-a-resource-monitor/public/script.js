@@ -1,4 +1,6 @@
-// Helper functions — pre-provided. Do not modify.
+// Helper functions - pre-provided. Do not modify.
+
+//import { WebSocket } from "ws";
 
 function updateMetrics({ loadAvg, freeMemMB, totalMemMB, memUsagePct }) {
   document.getElementById("mem-usage").textContent = memUsagePct;
@@ -13,4 +15,20 @@ function setStatus(text) {
   document.getElementById("status").textContent = text;
 }
 
-// Your code below — create a WebSocket connection and handle events.
+// Your code below - create a WebSocket connection and handle events.
+
+const socket = new WebSocket("ws://localhost:3000");
+socket.onopen = () => {
+  setStatus("Connected");
+};
+socket.onmessage = (event) => {
+  //console.log("Sending data.");
+  const data = JSON.parse(event.data);
+  updateMetrics(data);
+};
+socket.onclose = () => {
+  setStatus("Disconnected");
+};
+socket.onerror = (err) => {
+  console.error("WebSocket error:", err);
+};
